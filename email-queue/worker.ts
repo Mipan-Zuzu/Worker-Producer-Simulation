@@ -31,7 +31,7 @@ const worker = new Worker("email-queue", async (job) => {
 },
     {connection},
 )
-494
+
 worker.on("completed", (job) => {
     console.log("job selesai", job.id)
 })
